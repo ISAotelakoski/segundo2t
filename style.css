@@ -1,9 +1,9 @@
 :root{
-    --cor-de-fundo: #ededed
+    --cor-de-fundo: #ededed;
+    --branco: #FFFFFF;
 }
 body {
     background-color: var(--cor-de-fundo);
 }
-h1{
-    background-color: aqua;
-}
+@import url(“styles/header.css”);
+
