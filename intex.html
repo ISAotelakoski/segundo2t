@@ -9,18 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/
-    css2?family=Poppins:wght@300;400;500;700&display=swap” rel=”stylesheet">
+    css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
-   </head>
+
+   
+   
+</head>
    
 <body>
     <header class="cabeçalho">
         <div class="container">
-            <input type="checkbo"  id="menu" class="container__botao">
+            <input type="checkbox" id="menu" class="container__botao">
             <label for="menu">
                <span class="cabeçalho__menu hamburguer container__imagem"></span>
             </label>
-            <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+           
+            <img src=”img/Logo.svg” alt=”Logo da Alurabooks” class=”container__imagem”>
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categorias</li>
                 <li class="lista-menu__item">
@@ -32,7 +36,7 @@
                 <li class="lista-menu__item">
                 <a href="#" class="lista-menu__link">Infraestrutura</a>
                 </li>
-                <li class=lista-menu__item">
+                <li class="lista-menu__item">
                 <a href="#" class="lista-menu__link">Business</a>
                 </li>
                 <li class="lista-menu__item">
@@ -43,32 +47,49 @@
             </div>
              <div class="container">
                     <input type="checkbox" id="menu" class="container__botao">
-                    <a href="#"><img src="img/Logo.svg" alt="Meus favoritos" class="container__imagem"></a>
-                    <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
-                    <a href="#"><img src="img/Usuario.svg" alt= "Meu perfil" class="container__imagem"></a>
+                    <a href="#"><img src="img/Logo.svg"  alt="Meus favoritos"class= "container_imagem"></a>
+                    <a href="#"><img src="img/Compras.svg" alt= "Carrinho de compras"class= "container_imagem"></a>
+                    <a href="#"><img src="img/Usuario.svg" alt= "Meu perfil"class= "container_imagem"></a>
                     </div>
                 </header>
-                <script src=”https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js”></script>
-                 <script> 
-                const swiper = new Swiper('.swiper', {speed: 400,spaceBetween: 100,});
-                </script>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+                 <script>
+               const swiper = new Swiper('.swiper', {speed: 400,spaceBetween: 100, spaceBetween: 10,slidesPerView: 3,pagination: {el: '.swiper-pagination',
+               type: 'bullets',},});
+              </script>
+              <div class=”swiper”>
+                
+               <!-- Additional required wrapper -->
+                <div class=”swiper-pagination”></div>
+                
+                <div class=”swiper-wrapper”>
+               <div class="swiper-scrollbar"></div>
 
-                <script> const swiper = new Swiper(‘.swiper’, { 
-                    spaceBetween: 10,
-                    slidesPerView: 3,
-                    pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
-                    },
-                    });
-
-</script>
-<div class=”swiper”>
-    <!-- Additional required wrapper -->
-    <!-- If we need pagination -->
-    <div class=”swiper-pagination”></div>
-    <div class=”swiper-wrapper”>
-    <div class=”swiper-scrollbar”></div>
-</body>
-</body>
+               <div class="card">
+                <div class="card__descricao">
+                <div class="descricao">
+                    <h3 class="descricao_titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao_titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com
+                    a plataforma do Google.</p>
+                </div>
+                <img src="img/Angular.svg" class="descricao__imagem">
+                </div>
+                </div>
+                </section>
+                <div class="card__botoes">
+                    <!-- Primeira coluna -->
+                    <ul class="botoes">
+                    <li class="botoes__item"><img src="img/Favoritos.svg"
+                    
+                    alt="Favoritar livro"></li>
+                    
+                    <li class="botoes__item"><img src="img/Compras.svg"
+                    
+                    alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <a href="#"class="botoes__ancora">Saiba mais</a>
+                    </div>
+                
+            
 </html>
